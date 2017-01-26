@@ -51,7 +51,7 @@ class Forecast {
             }
             
             if let max = temp["max"] as? Double {
-                self._lowTemp = "\(Double(round(10 * (max * 9 / 5 - 459.67)) / 10))"
+                self._highTemp = "\(Double(round(10 * (max * 9 / 5 - 459.67)) / 10))"
             }
         }
         

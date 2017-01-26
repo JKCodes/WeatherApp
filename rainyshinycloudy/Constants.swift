@@ -16,10 +16,10 @@ let LATITUDE = "lat="
 let LONGITUDE = "&lon="
 let APP_ID = "&appid="
 let API_KEY = "77126ca9e1f8abc392781cad3a8459d4"
-let LAT = -36
-let LONG = 123
+//let LAT = Location.sharedInstance.latitude!
+//let LONG = Location.sharedInstance.longitude!
 
 typealias DownloadComplete = () -> ()
 
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(CURRENT_EXTRA)\(LATITUDE)\(LAT)\(LONGITUDE)\(LONG)\(APP_ID)\(API_KEY)"
-let FORECAST_URL = "\(BASE_URL)\(FORECAST_EXTRA)\(LATITUDE)\(LAT)\(LONGITUDE)\(LONG)\(FORECAST_SUFFIX)\(APP_ID)\(API_KEY)"
+let CURRENT_WEATHER_URL = "\(BASE_URL)\(CURRENT_EXTRA)\(LATITUDE)\(Location.sharedInstance.latitude!)\(LONGITUDE)\(Location.sharedInstance.longitude!)\(APP_ID)\(API_KEY)"
+let FORECAST_URL = "\(BASE_URL)\(FORECAST_EXTRA)\(LATITUDE)\(Location.sharedInstance.latitude!)\(LONGITUDE)\(Location.sharedInstance.longitude!)\(FORECAST_SUFFIX)\(APP_ID)\(API_KEY)"
