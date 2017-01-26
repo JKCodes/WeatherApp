@@ -13,8 +13,8 @@ let LATITUDE = "lat="
 let LONGITUDE = "&lon="
 let APP_ID = "&appid="
 let API_KEY = "77126ca9e1f8abc392781cad3a8459d4"
-let LONG = -36
-let LAT = 123
+let LAT = -36
+let LONG = 123
 
 typealias DownloadComplete = () -> ()
 
